@@ -20,7 +20,7 @@ jobs:
       # Customize the JVM maximum heap limit
       JVM_OPTS: -Xmx3200m
       TERM: dumb
-      CODECOV_TOKEN="93d08766-8f25-44ab-b3b5-b5491443025c"
+      CODECOV_TOKEN:93d08766-8f25-44ab-b3b5-b5491443025c
 
     steps:
       - checkout
@@ -57,5 +57,5 @@ jobs:
 
       - run:
           name: Send to CodeCov
-          command: bash <(curl -s https://codecov.io/bash)
+          command: bash <(curl -s https://codecov.io/bash) -t $CODECOV_TOKEN
 
