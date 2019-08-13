@@ -12,6 +12,6 @@ import java.util.Set;
 @Setter
 public class Category {
     private String id;
-    private String description;
+    private String Description;
     private Set<Recipe> recipes;
 }
